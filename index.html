@@ -4,9 +4,49 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
    <title>Budget App - Vanilla JS</title>
 </head>
 <body>
-   
+   <div class="container">
+      <h1 class="title">Controle de Despesas</h1>
+      
+      <div class="saldo-atual">
+         <h1>SALDO ATUAL</h1>
+         <p>R$ 20.00</p>
+      </div>
+      
+      <div class="receita-despesa">
+         <div class="receita">
+            <h1>RECEITAS</h1>
+            <p>R$ 0.00</p>
+         </div>
+         
+         <div class="despesa">
+            <h1>DESPESAS</h1>
+            <p>R$ 0.00</p>
+         </div>
+      </div>
+
+      <div class="transacoes">
+         <h1>Transações</h1>
+         <ul>
+            <!-- <li>positivo</li>
+            <li>negativo</li> -->
+         </ul>
+      </div>
+
+      <form class="transacoesForm">
+         <h1>Adicionar transação</h1>
+         <label for="">Nome</label>
+         <input type="text">
+
+         <label for="">Valor</label>
+         <span>(negativo despesa, positivo saldo)</span>
+         <input type="select">
+
+         <button>Adicionar</button>
+      </form>
+   </div>
 </body>
 </html>
