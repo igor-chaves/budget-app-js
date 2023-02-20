@@ -7,6 +7,48 @@
    <title>Budget App - Vanilla JS</title>
 </head>
 <body>
+<<<<<<< Updated upstream
    
+=======
+   <div class="container">
+      <h1 class="title">Controle de Despesas</h1>
+      
+      <section class="saldo-atual">
+         <h1>SALDO ATUAL</h1>
+         <p>R$ 20.00</p>
+      </section>
+      
+      <section class="receita-despesa">
+         <div class="receita">
+            <h1>RECEITAS</h1>
+            <p>R$ 0.00</p>
+         </div>
+         
+         <div class="despesa">
+            <h1>DESPESAS</h1>
+            <p>R$ 0.00</p>
+         </div>
+      </section>
+
+      <section data-js="transacoes" class="transacoes">
+         <h1>Transações</h1>
+         <ul data-js="transactions-list" class="transactionsList"></ul>
+      </section>
+
+      <form data-js="transactions-form" class="transacoesForm">
+         <h1>Adicionar transação</h1>
+         <label for="">Nome</label>
+         <input name="description" type="text">
+
+         <label for="">Valor</label>
+         <span>(negativo despesa, positivo saldo)</span>
+         <input name="amount" type="select">
+
+         <button>Adicionar</button>
+      </form>
+   </div>
+
+   <script src="./app.js"></script>
+>>>>>>> Stashed changes
 </body>
 </html>
