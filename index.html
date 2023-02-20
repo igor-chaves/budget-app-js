@@ -4,7 +4,6 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
    <title>Budget App - Vanilla JS</title>
 </head>
 <body>
@@ -28,22 +27,19 @@
          </div>
       </section>
 
-      <section class="transacoes">
+      <section data-js="transacoes" class="transacoes">
          <h1>Transações</h1>
-         <ul>
-            <!-- <li>positivo</li>
-            <li>negativo</li> -->
-         </ul>
+         <ul data-js="transactions-list" class="transactionsList"></ul>
       </section>
 
-      <form class="transacoesForm">
+      <form data-js="transactions-form" class="transacoesForm">
          <h1>Adicionar transação</h1>
          <label for="">Nome</label>
-         <input type="text">
+         <input name="description" type="text">
 
          <label for="">Valor</label>
          <span>(negativo despesa, positivo saldo)</span>
-         <input type="select">
+         <input name="amount" type="select">
 
          <button>Adicionar</button>
       </form>
